@@ -1,2 +1,2 @@
-# S-E_MS
-Stock and employee management system
+# KENTOVET
+Stock management system
