@@ -1,0 +1,13 @@
+D:\KENTOVET\KENTOVET\bin\Debug\KENTOVET.exe.config
+D:\KENTOVET\KENTOVET\bin\Debug\KENTOVET.exe
+D:\KENTOVET\KENTOVET\bin\Debug\KENTOVET.pdb
+D:\KENTOVET\KENTOVET\obj\Debug\KENTOVET.csproj.AssemblyReference.cache
+D:\KENTOVET\KENTOVET\obj\Debug\KENTOVET.csproj.SuggestedBindingRedirects.cache
+D:\KENTOVET\KENTOVET\obj\Debug\KENTOVET.Form1.resources
+D:\KENTOVET\KENTOVET\obj\Debug\KENTOVET.Properties.Resources.resources
+D:\KENTOVET\KENTOVET\obj\Debug\KENTOVET.csproj.GenerateResource.cache
+D:\KENTOVET\KENTOVET\obj\Debug\KENTOVET.csproj.CoreCompileInputs.cache
+D:\KENTOVET\KENTOVET\obj\Debug\KENTOVET.exe
+D:\KENTOVET\KENTOVET\obj\Debug\KENTOVET.pdb
+D:\KENTOVET\KENTOVET\bin\Debug\Guna.UI2.dll
+D:\KENTOVET\KENTOVET\obj\Debug\KENTOVET.csproj.CopyComplete
