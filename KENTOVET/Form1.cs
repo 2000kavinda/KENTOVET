@@ -49,6 +49,28 @@ namespace KENTOVET
             guna2ComboBox2.ValueMember = "CusCatname";
             con.Close();
         }
+        private void calTotal()
+        {
+            using (SqlConnection con = new SqlConnection("Data Source=.\\sqlexpress;Initial Catalog=KENTOVET;Integrated Security=True"))
+            {
+                con.Open();
+
+                SqlCommand cmd = new SqlCommand("SELECT SUM(total) FROM cart", con);
+                object result = cmd.ExecuteScalar();
+
+                if (result != DBNull.Value)
+                {
+                    guna2HtmlLabel10.Text = "Total: Rs." + Convert.ToDecimal(result).ToString("0.00");
+                }
+                else
+                {
+                    guna2HtmlLabel10.Text = "Total: Rs.0.00";
+                }
+
+                con.Close();
+            }
+        }
+
         private void LoadRefresh()
         {
             SqlConnection con = new SqlConnection("Data Source=.\\sqlexpress;Initial Catalog=KENTOVET;Integrated Security=True");
@@ -192,6 +214,7 @@ namespace KENTOVET
                         guna2TextBox8.Clear();
                         guna2TextBox9.Clear();
                         guna2TextBox13.Clear();
+                        calTotal();
                         MessageBox.Show("Added sucessfully");
                     }
                     else { MessageBox.Show("Availability is not enough"); }
@@ -326,6 +349,7 @@ namespace KENTOVET
                         guna2TextBox15.Clear();
                         LoadRefresh();
                         LoadCart();
+                        calTotal();
                         MessageBox.Show("Removed from cart");
 
                     /*if (Int32.Parse(guna2TextBox1.Text) > Int32.Parse(guna2TextBox5.Text))

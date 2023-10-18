@@ -46,7 +46,6 @@
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.guna2TextBox7 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -157,6 +156,7 @@
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.Size = new System.Drawing.Size(229, 48);
             this.guna2TextBox1.TabIndex = 31;
+            this.guna2TextBox1.Visible = false;
             // 
             // guna2TextBox3
             // 
@@ -303,6 +303,7 @@
             this.guna2HtmlLabel8.Size = new System.Drawing.Size(83, 18);
             this.guna2HtmlLabel8.TabIndex = 41;
             this.guna2HtmlLabel8.Text = "Available Qty";
+            this.guna2HtmlLabel8.Visible = false;
             // 
             // guna2Button2
             // 
@@ -318,23 +319,14 @@
             this.guna2Button2.TabIndex = 43;
             this.guna2Button2.Text = "Place order";
             // 
-            // guna2HtmlLabel9
-            // 
-            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(671, 476);
-            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(44, 18);
-            this.guna2HtmlLabel9.TabIndex = 44;
-            this.guna2HtmlLabel9.Text = "Total =";
-            // 
             // guna2HtmlLabel10
             // 
             this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel10.Location = new System.Drawing.Point(786, 476);
             this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
-            this.guna2HtmlLabel10.Size = new System.Drawing.Size(44, 18);
+            this.guna2HtmlLabel10.Size = new System.Drawing.Size(91, 18);
             this.guna2HtmlLabel10.TabIndex = 45;
-            this.guna2HtmlLabel10.Text = "Total =";
+            this.guna2HtmlLabel10.Text = "Total: Rs.00.00";
             // 
             // dataGridView1
             // 
@@ -412,6 +404,7 @@
             this.guna2TextBox8.SelectedText = "";
             this.guna2TextBox8.Size = new System.Drawing.Size(229, 48);
             this.guna2TextBox8.TabIndex = 51;
+            this.guna2TextBox8.Visible = false;
             // 
             // guna2TextBox9
             // 
@@ -432,6 +425,7 @@
             this.guna2TextBox9.SelectedText = "";
             this.guna2TextBox9.Size = new System.Drawing.Size(229, 48);
             this.guna2TextBox9.TabIndex = 52;
+            this.guna2TextBox9.Visible = false;
             // 
             // guna2TextBox10
             // 
@@ -452,6 +446,7 @@
             this.guna2TextBox10.SelectedText = "";
             this.guna2TextBox10.Size = new System.Drawing.Size(229, 48);
             this.guna2TextBox10.TabIndex = 53;
+            this.guna2TextBox10.Visible = false;
             // 
             // guna2TextBox11
             // 
@@ -472,6 +467,7 @@
             this.guna2TextBox11.SelectedText = "";
             this.guna2TextBox11.Size = new System.Drawing.Size(229, 48);
             this.guna2TextBox11.TabIndex = 54;
+            this.guna2TextBox11.Visible = false;
             // 
             // guna2TextBox12
             // 
@@ -492,6 +488,7 @@
             this.guna2TextBox12.SelectedText = "";
             this.guna2TextBox12.Size = new System.Drawing.Size(229, 48);
             this.guna2TextBox12.TabIndex = 55;
+            this.guna2TextBox12.Visible = false;
             // 
             // guna2TextBox13
             // 
@@ -512,6 +509,7 @@
             this.guna2TextBox13.SelectedText = "";
             this.guna2TextBox13.Size = new System.Drawing.Size(229, 48);
             this.guna2TextBox13.TabIndex = 56;
+            this.guna2TextBox13.Visible = false;
             // 
             // guna2TextBox14
             // 
@@ -532,6 +530,7 @@
             this.guna2TextBox14.SelectedText = "";
             this.guna2TextBox14.Size = new System.Drawing.Size(229, 48);
             this.guna2TextBox14.TabIndex = 57;
+            this.guna2TextBox14.Visible = false;
             // 
             // guna2Button4
             // 
@@ -567,6 +566,7 @@
             this.guna2TextBox15.SelectedText = "";
             this.guna2TextBox15.Size = new System.Drawing.Size(229, 48);
             this.guna2TextBox15.TabIndex = 59;
+            this.guna2TextBox15.Visible = false;
             // 
             // Form1
             // 
@@ -587,7 +587,6 @@
             this.Controls.Add(this.guna2TextBox7);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.guna2HtmlLabel10);
-            this.Controls.Add(this.guna2HtmlLabel9);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2HtmlLabel8);
             this.Controls.Add(this.guna2HtmlLabel7);
@@ -636,7 +635,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
         private System.Windows.Forms.DataGridView dataGridView1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox7;
