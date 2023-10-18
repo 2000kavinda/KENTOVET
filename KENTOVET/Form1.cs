@@ -49,6 +49,28 @@ namespace KENTOVET
             guna2ComboBox2.ValueMember = "CusCatname";
             con.Close();
         }
+        private void LoadRefresh()
+        {
+            SqlConnection con = new SqlConnection("Data Source=.\\sqlexpress;Initial Catalog=KENTOVET;Integrated Security=True");
+            con.Open();
+            SqlCommand cmd = new SqlCommand("displayStock", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            DataTable dt = new DataTable();
+            dt.Load(cmd.ExecuteReader());
+            dataGridView1.DataSource = dt;
+            con.Close();
+        }
+        private void LoadCart()
+        {
+            SqlConnection con = new SqlConnection("Data Source=.\\sqlexpress;Initial Catalog=KENTOVET;Integrated Security=True");
+            con.Open();
+            SqlCommand cmd1 = new SqlCommand("displayCart", con);
+            cmd1.CommandType = CommandType.StoredProcedure;
+            DataTable dt = new DataTable();
+            dt.Load(cmd1.ExecuteReader());
+            dataGridView2.DataSource = dt;
+            con.Close();
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
             LoadCusCat();
@@ -90,9 +112,46 @@ namespace KENTOVET
             selectedRow = e.RowIndex;
             DataGridViewRow row = dataGridView1.Rows[selectedRow];
             guna2TextBox3.Text = row.Cells[0].Value.ToString();
+            guna2TextBox8.Text = row.Cells[1].Value.ToString();
+            guna2TextBox9.Text = row.Cells[2].Value.ToString();
             guna2TextBox1.Text = row.Cells[5].Value.ToString();
             guna2TextBox6.Text = row.Cells[4].Value.ToString();
             //guna2TextBox5.Text = row.Cells[0].Value.ToString();
+
+            string productName = guna2TextBox3.Text;
+
+            // Use a parameterized query to prevent SQL injection
+            string query = "SELECT Pid FROM product WHERE Pname = @ProductName";
+
+            using (SqlConnection con = new SqlConnection("Data Source=.\\sqlexpress;Initial Catalog=KENTOVET;Integrated Security=True"))
+            {
+                con.Open();
+
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    // Add a parameter for the product name
+                    cmd.Parameters.AddWithValue("@ProductName", productName);
+
+                    using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                    {
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        if (dt.Rows.Count > 0)
+                        {
+                            // Retrieve the Pid and fill guna2TextBox13
+                            guna2TextBox13.Text = dt.Rows[0]["Pid"].ToString();
+                        }
+                        else
+                        {
+                            // Handle the case where no matching product is found
+                            guna2TextBox13.Text = "Product not found";
+                        }
+                    }
+                }
+            }
+
+
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -109,30 +168,200 @@ namespace KENTOVET
                     cmd.Parameters.Add("@Cusid", SqlDbType.VarChar).Value = guna2TextBox2.Text;
                     cmd.Parameters.Add("@Did", SqlDbType.VarChar).Value = guna2ComboBox1.Text;
                     cmd.Parameters.Add("@itemName", SqlDbType.VarChar).Value = guna2TextBox3.Text;
-                    cmd.Parameters.Add("@Qty", SqlDbType.Int).Value = Int32.Parse(guna2TextBox1.Text);
+                    cmd.Parameters.Add("@Qty", SqlDbType.Int).Value = Int32.Parse(guna2TextBox5.Text);
                     cmd.Parameters.Add("@total", SqlDbType.Int).Value = Int32.Parse(guna2TextBox6.Text) * Int32.Parse(guna2TextBox5.Text);
                     cmd.Parameters.Add("@Odate", SqlDbType.Date).Value = DateTime.Now.Date;
+                    cmd.Parameters.Add("@Bid", SqlDbType.VarChar).Value = guna2TextBox9.Text;
+                    cmd.Parameters.Add("@Comid", SqlDbType.VarChar).Value = guna2TextBox8.Text;
                     if (Int32.Parse(guna2TextBox1.Text) > Int32.Parse(guna2TextBox5.Text)) {
                         cmd.ExecuteNonQuery();  // Execute the stored procedure
+
+                        SqlCommand cmd2 = new SqlCommand("updateAvailability", con);
+                        cmd2.CommandType = CommandType.StoredProcedure;
+                        cmd2.Parameters.Add("@Pid", SqlDbType.VarChar).Value = guna2TextBox13.Text;
+                        cmd2.Parameters.Add("@Comid", SqlDbType.VarChar).Value = guna2TextBox8.Text;
+                        cmd2.Parameters.Add("@Bid", SqlDbType.VarChar).Value = guna2TextBox9.Text;
+                        cmd2.Parameters.Add("@qty", SqlDbType.Int).Value = Int32.Parse(guna2TextBox1.Text) - Int32.Parse(guna2TextBox5.Text);
+                        cmd2.ExecuteNonQuery();
+                        LoadCart();
+                        LoadRefresh();
+                        guna2TextBox5.Clear();
+                        guna2TextBox3.Clear();
+                        guna2TextBox1.Clear();
+                        guna2TextBox6.Clear();
+                        guna2TextBox8.Clear();
+                        guna2TextBox9.Clear();
+                        guna2TextBox13.Clear();
                         MessageBox.Show("Added sucessfully");
                     }
                     else { MessageBox.Show("Availability is not enough"); }
                     
                     
-                    SqlCommand cmd1 = new SqlCommand("displayCart", con);
+                    /*SqlCommand cmd1 = new SqlCommand("displayCart", con);
                     cmd1.CommandType = CommandType.StoredProcedure;
                     DataTable dt = new DataTable();
                     dt.Load(cmd1.ExecuteReader());
                     dataGridView2.DataSource = dt;
-                    
-                    guna2TextBox5.Clear();
+                    LoadRefresh();*/
+
+
+                    /*guna2TextBox5.Clear();
                     guna2TextBox3.Clear();
                     guna2TextBox1.Clear();
                     guna2TextBox6.Clear();
+                    guna2TextBox8.Clear();
+                    guna2TextBox9.Clear();*/
                 }
                 con.Close();
             }
         }
 
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            selectedRow = e.RowIndex;
+            DataGridViewRow row = dataGridView2.Rows[selectedRow];
+            guna2TextBox10.Text = row.Cells[2].Value.ToString();
+            guna2TextBox11.Text = row.Cells[6].Value.ToString();
+            guna2TextBox12.Text = row.Cells[7].Value.ToString();
+            guna2TextBox14.Text = row.Cells[3].Value.ToString();
+
+            string productName = guna2TextBox10.Text;
+
+            // Use a parameterized query to prevent SQL injection
+            string query = "SELECT Pid FROM product WHERE Pname = @ProductName";
+
+            using (SqlConnection con = new SqlConnection("Data Source=.\\sqlexpress;Initial Catalog=KENTOVET;Integrated Security=True"))
+            {
+                con.Open();
+
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    // Add a parameter for the product name
+                    cmd.Parameters.AddWithValue("@ProductName", productName);
+
+                    using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                    {
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+
+                        if (dt.Rows.Count > 0)
+                        {
+                            // Retrieve the Pid and fill guna2TextBox13
+                            guna2TextBox13.Text = dt.Rows[0]["Pid"].ToString();
+                        }
+                        else
+                        {
+                            // Handle the case where no matching product is found
+                            guna2TextBox13.Text = "Product not found";
+                        }
+                    }
+                }
+            }
+
+            string Pid = guna2TextBox13.Text;
+            string Comid = guna2TextBox12.Text;
+            string Bid = guna2TextBox11.Text;
+            string query1 = "SELECT qty FROM productStock WHERE Pid = @Pid AND Comid = @Comid AND Bid=@Bid ";
+
+            using (SqlConnection con = new SqlConnection("Data Source=.\\sqlexpress;Initial Catalog=KENTOVET;Integrated Security=True"))
+            {
+                con.Open();
+
+                using (SqlCommand cmd = new SqlCommand(query1, con))
+                {
+                    // Add a parameter for the product name
+                    cmd.Parameters.AddWithValue("@Pid", Pid);
+                    cmd.Parameters.AddWithValue("@Comid", Comid);
+                    cmd.Parameters.AddWithValue("@Bid", Bid);
+
+                    using (SqlDataAdapter da1 = new SqlDataAdapter(cmd))
+                    {
+                        DataTable dt1 = new DataTable();
+                        da1.Fill(dt1);
+
+                        if (dt1.Rows.Count > 0)
+                        {
+                            // Retrieve the Pid and fill guna2TextBox13
+                            guna2TextBox15.Text = dt1.Rows[0]["qty"].ToString();
+                        }
+                        else
+                        {
+                            // Handle the case where no matching product is found
+                            guna2TextBox15.Text = "Product not found";
+                        }
+                    }
+                }
+            }
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection con = new SqlConnection("Data Source=.\\sqlexpress;Initial Catalog=KENTOVET;Integrated Security=True"))
+            {
+                con.Open();
+
+                using (SqlCommand cmd = new SqlCommand("deleteCartItem", con))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    // Assuming types for parameters, adjust as needed
+                    
+                    cmd.Parameters.Add("@itemName", SqlDbType.VarChar).Value = guna2TextBox10.Text;
+                    cmd.Parameters.Add("@Comid", SqlDbType.VarChar).Value = guna2TextBox12.Text;
+                    cmd.Parameters.Add("@Bid", SqlDbType.VarChar).Value = guna2TextBox11.Text;
+                    cmd.ExecuteNonQuery();
+
+                    SqlCommand cmd2 = new SqlCommand("updateAvailability", con);
+                        cmd2.CommandType = CommandType.StoredProcedure;
+                        cmd2.Parameters.Add("@Pid", SqlDbType.VarChar).Value = guna2TextBox13.Text;
+                        cmd2.Parameters.Add("@Comid", SqlDbType.VarChar).Value = guna2TextBox12.Text;
+                        cmd2.Parameters.Add("@Bid", SqlDbType.VarChar).Value = guna2TextBox11.Text;
+                        cmd2.Parameters.Add("@qty", SqlDbType.Int).Value = Int32.Parse(guna2TextBox15.Text) + Int32.Parse(guna2TextBox14.Text);
+                        cmd2.ExecuteNonQuery();
+                        guna2TextBox10.Clear();
+                        guna2TextBox11.Clear();
+                        guna2TextBox12.Clear();
+                        guna2TextBox13.Clear();
+                        guna2TextBox14.Clear();
+                        guna2TextBox15.Clear();
+                        LoadRefresh();
+                        LoadCart();
+                        MessageBox.Show("Removed from cart");
+
+                    /*if (Int32.Parse(guna2TextBox1.Text) > Int32.Parse(guna2TextBox5.Text))
+                    {
+                        // Execute the stored procedure
+
+                        SqlCommand cmd2 = new SqlCommand("updateAvailability", con);
+                        cmd2.CommandType = CommandType.StoredProcedure;
+                        cmd2.Parameters.Add("@Pid", SqlDbType.VarChar).Value = guna2TextBox13.Text;
+                        cmd2.Parameters.Add("@Comid", SqlDbType.VarChar).Value = guna2TextBox8.Text;
+                        cmd2.Parameters.Add("@Bid", SqlDbType.VarChar).Value = guna2TextBox9.Text;
+                        cmd2.Parameters.Add("@qty", SqlDbType.Int).Value = Int32.Parse(guna2TextBox1.Text) - Int32.Parse(guna2TextBox5.Text);
+                        cmd2.ExecuteNonQuery();
+
+                        MessageBox.Show("Added sucessfully");
+                    }
+                    else { MessageBox.Show("Availability is not enough"); }*/
+
+
+                    /*SqlCommand cmd1 = new SqlCommand("displayCart", con);
+                    cmd1.CommandType = CommandType.StoredProcedure;
+                    DataTable dt = new DataTable();
+                    dt.Load(cmd1.ExecuteReader());
+                    dataGridView2.DataSource = dt;
+                    LoadRefresh();
+
+
+                    guna2TextBox5.Clear();
+                    guna2TextBox3.Clear();
+                    guna2TextBox1.Clear();
+                    guna2TextBox6.Clear();
+                    guna2TextBox8.Clear();
+                    guna2TextBox9.Clear();*/
+                }
+                con.Close();
+            }
+        }
     }
 }
