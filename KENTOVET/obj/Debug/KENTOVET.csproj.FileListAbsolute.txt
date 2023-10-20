@@ -11,3 +11,15 @@ D:\KENTOVET\KENTOVET\obj\Debug\KENTOVET.exe
 D:\KENTOVET\KENTOVET\obj\Debug\KENTOVET.pdb
 D:\KENTOVET\KENTOVET\bin\Debug\Guna.UI2.dll
 D:\KENTOVET\KENTOVET\obj\Debug\KENTOVET.csproj.CopyComplete
+F:\ADBMS Project\KENTOVET\KENTOVET\bin\Debug\KENTOVET.exe.config
+F:\ADBMS Project\KENTOVET\KENTOVET\bin\Debug\KENTOVET.exe
+F:\ADBMS Project\KENTOVET\KENTOVET\bin\Debug\KENTOVET.pdb
+F:\ADBMS Project\KENTOVET\KENTOVET\bin\Debug\Guna.UI2.dll
+F:\ADBMS Project\KENTOVET\KENTOVET\obj\Debug\KENTOVET.csproj.AssemblyReference.cache
+F:\ADBMS Project\KENTOVET\KENTOVET\obj\Debug\KENTOVET.Form1.resources
+F:\ADBMS Project\KENTOVET\KENTOVET\obj\Debug\KENTOVET.Properties.Resources.resources
+F:\ADBMS Project\KENTOVET\KENTOVET\obj\Debug\KENTOVET.csproj.GenerateResource.cache
+F:\ADBMS Project\KENTOVET\KENTOVET\obj\Debug\KENTOVET.csproj.CoreCompileInputs.cache
+F:\ADBMS Project\KENTOVET\KENTOVET\obj\Debug\KENTOVET.csproj.CopyComplete
+F:\ADBMS Project\KENTOVET\KENTOVET\obj\Debug\KENTOVET.exe
+F:\ADBMS Project\KENTOVET\KENTOVET\obj\Debug\KENTOVET.pdb
