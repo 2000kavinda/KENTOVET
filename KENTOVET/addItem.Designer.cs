@@ -391,9 +391,9 @@
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel8.Location = new System.Drawing.Point(36, 458);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(60, 18);
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(78, 18);
             this.guna2HtmlLabel8.TabIndex = 28;
-            this.guna2HtmlLabel8.Text = "Buy Price";
+            this.guna2HtmlLabel8.Text = "Buying Price";
             // 
             // guna2HtmlLabel9
             // 
