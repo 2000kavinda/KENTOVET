@@ -26,3 +26,6 @@ F:\ADBMS Project\KENTOVET\KENTOVET\obj\Debug\KENTOVET.pdb
 D:\KENTOVET\KENTOVET\obj\Debug\KENTOVET.addItem.resources
 D:\KENTOVET\KENTOVET\obj\Debug\KENTOVET.successmsg.resources
 D:\KENTOVET\KENTOVET\obj\Debug\KENTOVET.itemList.resources
+F:\ADBMS Project\KENTOVET\KENTOVET\obj\Debug\KENTOVET.addItem.resources
+F:\ADBMS Project\KENTOVET\KENTOVET\obj\Debug\KENTOVET.itemList.resources
+F:\ADBMS Project\KENTOVET\KENTOVET\obj\Debug\KENTOVET.successmsg.resources
