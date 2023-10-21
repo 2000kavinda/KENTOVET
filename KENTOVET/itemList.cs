@@ -88,5 +88,10 @@ namespace KENTOVET
             MessageBox.Show("Sucessfully Deleted");
             con.Close();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
