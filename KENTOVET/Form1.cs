@@ -142,7 +142,7 @@ namespace KENTOVET
 
             string productName = guna2TextBox3.Text;
 
-            // Use a parameterized query to prevent SQL injection
+            
             string query = "SELECT Pid FROM product WHERE Pname = @ProductName";
 
             using (SqlConnection con = new SqlConnection("Data Source=.\\sqlexpress;Initial Catalog=KENTOVET;Integrated Security=True"))
@@ -166,7 +166,6 @@ namespace KENTOVET
                         }
                         else
                         {
-                            // Handle the case where no matching product is found
                             guna2TextBox13.Text = "Product not found";
                         }
                     }
@@ -250,7 +249,7 @@ namespace KENTOVET
 
             string productName = guna2TextBox10.Text;
 
-            // Use a parameterized query to prevent SQL injection
+            
             string query = "SELECT Pid FROM product WHERE Pname = @ProductName";
 
             using (SqlConnection con = new SqlConnection("Data Source=.\\sqlexpress;Initial Catalog=KENTOVET;Integrated Security=True"))
@@ -274,7 +273,6 @@ namespace KENTOVET
                         }
                         else
                         {
-                            // Handle the case where no matching product is found
                             guna2TextBox13.Text = "Product not found";
                         }
                     }
@@ -309,7 +307,6 @@ namespace KENTOVET
                         }
                         else
                         {
-                            // Handle the case where no matching product is found
                             guna2TextBox15.Text = "Product not found";
                         }
                     }
