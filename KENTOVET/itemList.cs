@@ -88,5 +88,10 @@ namespace KENTOVET
             MessageBox.Show("Sucessfully Deleted");
             con.Close();
         }
+
+        private void guna2Button6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
