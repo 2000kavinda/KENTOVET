@@ -63,9 +63,39 @@ namespace KENTOVET.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_back_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-back-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_correct_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-correct-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_cross_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-cross-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_document_50__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-document-50 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -86,6 +116,16 @@ namespace KENTOVET.Properties {
         internal static System.Drawing.Bitmap icons8_question_mark_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-question-mark-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_sales_50__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-sales-50 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
