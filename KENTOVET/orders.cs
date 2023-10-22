@@ -146,5 +146,12 @@ namespace KENTOVET
             a.Show();
             this.Hide();
         }
+
+        private void guna2Button8_Click(object sender, EventArgs e)
+        {
+            dashboard a = new dashboard();
+            a.Show();
+            this.Hide();
+        }
     }
 }

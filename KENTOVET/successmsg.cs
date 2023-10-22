@@ -29,7 +29,9 @@ namespace KENTOVET
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
-
+            dashboard a = new dashboard();
+            a.Show();
+            this.Hide();
         }
 
         private void guna2HtmlLabel1_Click(object sender, EventArgs e)

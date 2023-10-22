@@ -28,7 +28,7 @@ namespace KENTOVET
             {
                 timer1.Stop();
 
-                Form1 p = new Form1();
+                login p = new login();
                 p.Show();
                 this.Hide();
 

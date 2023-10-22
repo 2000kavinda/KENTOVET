@@ -21,8 +21,8 @@ namespace KENTOVET
         {
             if (textBox1.Text == "admin" && textBox2.Text == "12345")
             {
-                loading _load = new loading();
-                _load.Show();
+                dashboard a = new dashboard();
+                a.Show();
                 this.Hide();
             }
             else

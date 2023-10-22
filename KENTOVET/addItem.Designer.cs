@@ -76,7 +76,7 @@
             this.name.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.name.ForeColor = System.Drawing.SystemColors.Control;
             this.name.Location = new System.Drawing.Point(39, 16);
-            this.name.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.name.Margin = new System.Windows.Forms.Padding(2);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(91, 19);
             this.name.TabIndex = 0;
@@ -88,7 +88,7 @@
             this.description.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.description.ForeColor = System.Drawing.SystemColors.Control;
             this.description.Location = new System.Drawing.Point(39, 242);
-            this.description.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.description.Margin = new System.Windows.Forms.Padding(2);
             this.description.Name = "description";
             this.description.Size = new System.Drawing.Size(126, 19);
             this.description.TabIndex = 1;
@@ -101,7 +101,7 @@
             this.id.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id.ForeColor = System.Drawing.SystemColors.Control;
             this.id.Location = new System.Drawing.Point(218, 87);
-            this.id.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.id.Margin = new System.Windows.Forms.Padding(2);
             this.id.Name = "id";
             this.id.Size = new System.Drawing.Size(69, 19);
             this.id.TabIndex = 2;
@@ -113,7 +113,7 @@
             this.type.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.type.ForeColor = System.Drawing.SystemColors.Control;
             this.type.Location = new System.Drawing.Point(39, 88);
-            this.type.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.type.Margin = new System.Windows.Forms.Padding(2);
             this.type.Name = "type";
             this.type.Size = new System.Drawing.Size(85, 19);
             this.type.TabIndex = 3;
@@ -199,7 +199,7 @@
             this.typeCombo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.typeCombo.ItemHeight = 30;
             this.typeCombo.Location = new System.Drawing.Point(39, 113);
-            this.typeCombo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.typeCombo.Margin = new System.Windows.Forms.Padding(2);
             this.typeCombo.Name = "typeCombo";
             this.typeCombo.Size = new System.Drawing.Size(126, 36);
             this.typeCombo.TabIndex = 7;
@@ -216,7 +216,7 @@
             this.guna2Button3.Image = global::KENTOVET.Properties.Resources.icons8_correct_96__1_;
             this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button3.Location = new System.Drawing.Point(18, 309);
-            this.guna2Button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.Size = new System.Drawing.Size(203, 45);
             this.guna2Button3.TabIndex = 12;
@@ -233,7 +233,7 @@
             this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
             this.guna2Button4.Location = new System.Drawing.Point(601, 529);
-            this.guna2Button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button4.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.ShadowDecoration.BorderRadius = 20;
             this.guna2Button4.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -254,7 +254,7 @@
             this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button5.ForeColor = System.Drawing.Color.White;
             this.guna2Button5.Location = new System.Drawing.Point(781, 529);
-            this.guna2Button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button5.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.ShadowDecoration.BorderRadius = 20;
             this.guna2Button5.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -271,7 +271,7 @@
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.SystemColors.Control;
             this.guna2HtmlLabel3.Location = new System.Drawing.Point(39, 161);
-            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(79, 19);
             this.guna2HtmlLabel3.TabIndex = 15;
@@ -283,7 +283,7 @@
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.SystemColors.Control;
             this.guna2HtmlLabel4.Location = new System.Drawing.Point(218, 161);
-            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(55, 19);
             this.guna2HtmlLabel4.TabIndex = 16;
@@ -302,7 +302,7 @@
             this.comidCombo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.comidCombo.ItemHeight = 30;
             this.comidCombo.Location = new System.Drawing.Point(39, 184);
-            this.comidCombo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comidCombo.Margin = new System.Windows.Forms.Padding(2);
             this.comidCombo.Name = "comidCombo";
             this.comidCombo.Size = new System.Drawing.Size(126, 36);
             this.comidCombo.TabIndex = 17;
@@ -320,7 +320,7 @@
             this.bidCombo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.bidCombo.ItemHeight = 30;
             this.bidCombo.Location = new System.Drawing.Point(218, 184);
-            this.bidCombo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bidCombo.Margin = new System.Windows.Forms.Padding(2);
             this.bidCombo.Name = "bidCombo";
             this.bidCombo.Size = new System.Drawing.Size(122, 36);
             this.bidCombo.TabIndex = 18;
@@ -331,7 +331,7 @@
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel6.ForeColor = System.Drawing.SystemColors.Control;
             this.guna2HtmlLabel6.Location = new System.Drawing.Point(39, 161);
-            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(72, 19);
             this.guna2HtmlLabel6.TabIndex = 26;
@@ -343,7 +343,7 @@
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel7.ForeColor = System.Drawing.SystemColors.Control;
             this.guna2HtmlLabel7.Location = new System.Drawing.Point(218, 161);
-            this.guna2HtmlLabel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel7.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(57, 19);
             this.guna2HtmlLabel7.TabIndex = 27;
@@ -355,7 +355,7 @@
             this.guna2HtmlLabel8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel8.ForeColor = System.Drawing.SystemColors.Control;
             this.guna2HtmlLabel8.Location = new System.Drawing.Point(39, 16);
-            this.guna2HtmlLabel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel8.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
             this.guna2HtmlLabel8.Size = new System.Drawing.Size(80, 19);
             this.guna2HtmlLabel8.TabIndex = 28;
@@ -367,7 +367,7 @@
             this.guna2HtmlLabel9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel9.ForeColor = System.Drawing.SystemColors.Control;
             this.guna2HtmlLabel9.Location = new System.Drawing.Point(39, 88);
-            this.guna2HtmlLabel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel9.Margin = new System.Windows.Forms.Padding(2);
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
             this.guna2HtmlLabel9.Size = new System.Drawing.Size(72, 19);
             this.guna2HtmlLabel9.TabIndex = 29;
@@ -452,7 +452,7 @@
             this.whouse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.whouse.ItemHeight = 30;
             this.whouse.Location = new System.Drawing.Point(39, 184);
-            this.whouse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.whouse.Margin = new System.Windows.Forms.Padding(2);
             this.whouse.Name = "whouse";
             this.whouse.Size = new System.Drawing.Size(126, 36);
             this.whouse.TabIndex = 33;
@@ -468,7 +468,7 @@
             this.guna2Button9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button9.ForeColor = System.Drawing.Color.White;
             this.guna2Button9.Location = new System.Drawing.Point(781, 529);
-            this.guna2Button9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button9.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button9.Name = "guna2Button9";
             this.guna2Button9.ShadowDecoration.BorderRadius = 20;
             this.guna2Button9.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -490,7 +490,7 @@
             this.guna2Button10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button10.ForeColor = System.Drawing.Color.White;
             this.guna2Button10.Location = new System.Drawing.Point(601, 529);
-            this.guna2Button10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button10.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button10.Name = "guna2Button10";
             this.guna2Button10.ShadowDecoration.BorderRadius = 20;
             this.guna2Button10.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -680,6 +680,7 @@
             this.guna2Button14.Size = new System.Drawing.Size(120, 45);
             this.guna2Button14.TabIndex = 72;
             this.guna2Button14.Text = " back";
+            this.guna2Button14.Click += new System.EventHandler(this.guna2Button14_Click);
             // 
             // guna2HtmlLabel10
             // 
@@ -757,7 +758,7 @@
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "addItem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "addItem";
