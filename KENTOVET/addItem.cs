@@ -100,12 +100,12 @@ namespace KENTOVET
             guna2Button6.Hide();
             guna2Button7.Hide();
             guna2Button8.Hide();
-            guna2HtmlLabel5.Hide();
+            
             guna2HtmlLabel6.Hide();
             guna2HtmlLabel7.Hide();
             guna2HtmlLabel8.Hide();
             guna2HtmlLabel9.Hide();
-            guna2HtmlLabel5.Hide();
+            //guna2HtmlLabel5.Hide();
             guna2Button9.Hide();
             guna2Button10.Hide();
             bprice.Hide();
@@ -122,8 +122,8 @@ namespace KENTOVET
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
-            guna2HtmlLabel1.Hide();
-            guna2HtmlLabel5.Show();
+            //guna2HtmlLabel1.Hide();
+            //guna2HtmlLabel5.Show();
             guna2Button1.Hide();
             guna2Button2.Hide();
             guna2Button3.Hide();

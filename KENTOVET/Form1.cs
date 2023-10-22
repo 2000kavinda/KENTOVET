@@ -429,5 +429,37 @@ namespace KENTOVET
         {
             this.Close();
         }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection("Data Source=.\\sqlexpress;Initial Catalog=KENTOVET;Integrated Security=True");
+            con.Open();
+
+            SqlCommand cmd = new SqlCommand("SELECT P.Pname,PS.Comid,Pname,PS.Bid,Pname,PS.Wid, PS.Sprice, PS.qty " +
+                                            "FROM productStock PS " +
+                                            "INNER JOIN product P ON P.Pid = PS.Pid " +
+                                            "WHERE PS.Pid = dbo.searchItem(@SearchText);", con);
+
+
+            cmd.Parameters.Add(new SqlParameter("@SearchText", guna2TextBox7.Text));
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+
+            con.Close();
+        }
+
+        private void guna2TextBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
