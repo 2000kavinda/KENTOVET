@@ -73,6 +73,16 @@ namespace KENTOVET.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_corgi {
+            get {
+                object obj = ResourceManager.GetObject("icons8-corgi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_correct_96 {
             get {
                 object obj = ResourceManager.GetObject("icons8-correct-96", resourceCulture);
@@ -136,6 +146,26 @@ namespace KENTOVET.Properties {
         internal static System.Drawing.Bitmap icons8_sales_50__1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-sales-50 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap load {
+            get {
+                object obj = ResourceManager.GetObject("load", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("logo-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

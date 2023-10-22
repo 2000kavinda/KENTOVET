@@ -16,7 +16,7 @@ namespace KENTOVET
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new itemList());
+            Application.Run(new loading());
         }
     }
 }
