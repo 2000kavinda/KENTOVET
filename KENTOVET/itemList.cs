@@ -125,5 +125,33 @@ namespace KENTOVET
         {
             this.Close();
         }
+
+        private void guna2Button9_Click(object sender, EventArgs e)
+        {
+            Form1 a = new Form1();
+            a.Show();
+            this.Hide();
+        }
+
+        private void guna2Button10_Click(object sender, EventArgs e)
+        {
+            orders b = new orders();
+            b.Show();
+            this.Hide();
+        }
+
+        private void guna2Button11_Click(object sender, EventArgs e)
+        {
+            addItem a = new addItem();
+            a.Show();
+            this.Hide();
+        }
+
+        private void guna2Button12_Click(object sender, EventArgs e)
+        {
+            itemList a = new itemList();
+            a.Show();
+            this.Hide();
+        }
     }
 }
