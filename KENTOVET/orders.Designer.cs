@@ -476,6 +476,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "orders";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "orders";
             this.Load += new System.EventHandler(this.orders_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
