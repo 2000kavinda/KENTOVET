@@ -19,7 +19,16 @@ namespace KENTOVET
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-           
+            if (textBox1.Text == "admin" && textBox2.Text == "12345")
+            {
+                Form1 stocks = new Form1();
+                stocks.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("error");
+            }
         }
     }
 }
