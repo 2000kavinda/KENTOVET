@@ -27,9 +27,10 @@ namespace KENTOVET
             if(guna2CircleProgressBar1.Value==100)
             {
                 timer1.Stop();
-                login check= new login();
-                check.Show();
-                this.Close();
+
+                Form1 p = new Form1();
+                p.Show();
+                this.Hide();
 
             }
             else
@@ -41,6 +42,11 @@ namespace KENTOVET
         }
 
         private void guna2CircleProgressBar1_ValueChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void loading_Load(object sender, EventArgs e)
         {
             guna2ShadowForm1.SetShadowForm(this);
             timer1.Start();
