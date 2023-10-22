@@ -113,5 +113,10 @@ namespace KENTOVET
 
             con.Close();
         }
+
+        private void guna2Button14_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

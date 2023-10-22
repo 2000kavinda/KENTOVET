@@ -21,8 +21,8 @@ namespace KENTOVET
         {
             if (textBox1.Text == "admin" && textBox2.Text == "12345")
             {
-                Form1 stocks = new Form1();
-                stocks.Show();
+                loading _load = new loading();
+                _load.Show();
                 this.Hide();
             }
             else

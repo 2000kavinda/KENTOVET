@@ -49,3 +49,21 @@ F:\ADBMS Project\1\KENTOVET\KENTOVET\obj\Debug\KENTOVET.login.resources
 D:\KENTOVET\KENTOVET\obj\Debug\KENTOVET.loading.resources
 D:\KENTOVET\KENTOVET\obj\Debug\KENTOVET.login.resources
 D:\KENTOVET\KENTOVET\obj\Debug\KENTOVET.orders.resources
+F:\ADBMS Project\3\KENTOVET\KENTOVET\bin\Debug\KENTOVET.exe.config
+F:\ADBMS Project\3\KENTOVET\KENTOVET\bin\Debug\KENTOVET.exe
+F:\ADBMS Project\3\KENTOVET\KENTOVET\bin\Debug\KENTOVET.pdb
+F:\ADBMS Project\3\KENTOVET\KENTOVET\bin\Debug\Guna.UI2.dll
+F:\ADBMS Project\3\KENTOVET\KENTOVET\obj\Debug\KENTOVET.csproj.AssemblyReference.cache
+F:\ADBMS Project\3\KENTOVET\KENTOVET\obj\Debug\KENTOVET.addItem.resources
+F:\ADBMS Project\3\KENTOVET\KENTOVET\obj\Debug\KENTOVET.Form1.resources
+F:\ADBMS Project\3\KENTOVET\KENTOVET\obj\Debug\KENTOVET.itemList.resources
+F:\ADBMS Project\3\KENTOVET\KENTOVET\obj\Debug\KENTOVET.loading.resources
+F:\ADBMS Project\3\KENTOVET\KENTOVET\obj\Debug\KENTOVET.login.resources
+F:\ADBMS Project\3\KENTOVET\KENTOVET\obj\Debug\KENTOVET.orders.resources
+F:\ADBMS Project\3\KENTOVET\KENTOVET\obj\Debug\KENTOVET.Properties.Resources.resources
+F:\ADBMS Project\3\KENTOVET\KENTOVET\obj\Debug\KENTOVET.successmsg.resources
+F:\ADBMS Project\3\KENTOVET\KENTOVET\obj\Debug\KENTOVET.csproj.GenerateResource.cache
+F:\ADBMS Project\3\KENTOVET\KENTOVET\obj\Debug\KENTOVET.csproj.CoreCompileInputs.cache
+F:\ADBMS Project\3\KENTOVET\KENTOVET\obj\Debug\KENTOVET.csproj.CopyComplete
+F:\ADBMS Project\3\KENTOVET\KENTOVET\obj\Debug\KENTOVET.exe
+F:\ADBMS Project\3\KENTOVET\KENTOVET\obj\Debug\KENTOVET.pdb
