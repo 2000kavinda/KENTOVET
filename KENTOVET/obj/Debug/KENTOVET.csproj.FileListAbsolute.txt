@@ -49,3 +49,13 @@ F:\ADBMS Project\1\KENTOVET\KENTOVET\obj\Debug\KENTOVET.login.resources
 D:\KENTOVET\KENTOVET\obj\Debug\KENTOVET.loading.resources
 D:\KENTOVET\KENTOVET\obj\Debug\KENTOVET.login.resources
 D:\KENTOVET\KENTOVET\obj\Debug\KENTOVET.orders.resources
+D:\KENTOVET\KENTOVET\bin\Debug\LiveCharts.dll
+D:\KENTOVET\KENTOVET\bin\Debug\LiveCharts.WinForms.dll
+D:\KENTOVET\KENTOVET\bin\Debug\LiveCharts.Wpf.dll
+D:\KENTOVET\KENTOVET\bin\Debug\LiveCharts.pdb
+D:\KENTOVET\KENTOVET\bin\Debug\LiveCharts.xml
+D:\KENTOVET\KENTOVET\bin\Debug\LiveCharts.WinForms.pdb
+D:\KENTOVET\KENTOVET\bin\Debug\LiveCharts.WinForms.xml
+D:\KENTOVET\KENTOVET\bin\Debug\LiveCharts.Wpf.pdb
+D:\KENTOVET\KENTOVET\bin\Debug\LiveCharts.Wpf.xml
+D:\KENTOVET\KENTOVET\obj\Debug\KENTOVET.dashboard.resources
