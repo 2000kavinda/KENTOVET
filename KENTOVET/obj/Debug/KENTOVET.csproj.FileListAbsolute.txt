@@ -48,3 +48,4 @@ F:\ADBMS Project\1\KENTOVET\KENTOVET\obj\Debug\KENTOVET.loading.resources
 F:\ADBMS Project\1\KENTOVET\KENTOVET\obj\Debug\KENTOVET.login.resources
 D:\KENTOVET\KENTOVET\obj\Debug\KENTOVET.loading.resources
 D:\KENTOVET\KENTOVET\obj\Debug\KENTOVET.login.resources
+D:\KENTOVET\KENTOVET\obj\Debug\KENTOVET.orders.resources

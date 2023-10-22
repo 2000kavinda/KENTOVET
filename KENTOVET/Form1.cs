@@ -459,7 +459,14 @@ namespace KENTOVET
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
+            SqlConnection con = new SqlConnection("Data Source=.\\sqlexpress;Initial Catalog=KENTOVET;Integrated Security=True");
+            con.Open();
 
+            SqlCommand cmd = new SqlCommand("INSERT INTO orders SELECT * FROM cart", con);
+            SqlCommand cmd1 = new SqlCommand("delete from cart", con);
+            cmd.ExecuteNonQuery();
+            cmd1.ExecuteNonQuery();
+            con.Close();
         }
     }
 }
