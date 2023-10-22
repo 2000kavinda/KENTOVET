@@ -44,3 +44,5 @@ F:\ADBMS Project\1\KENTOVET\KENTOVET\obj\Debug\KENTOVET.csproj.CoreCompileInputs
 F:\ADBMS Project\1\KENTOVET\KENTOVET\obj\Debug\KENTOVET.csproj.CopyComplete
 F:\ADBMS Project\1\KENTOVET\KENTOVET\obj\Debug\KENTOVET.exe
 F:\ADBMS Project\1\KENTOVET\KENTOVET\obj\Debug\KENTOVET.pdb
+F:\ADBMS Project\1\KENTOVET\KENTOVET\obj\Debug\KENTOVET.loading.resources
+F:\ADBMS Project\1\KENTOVET\KENTOVET\obj\Debug\KENTOVET.login.resources
